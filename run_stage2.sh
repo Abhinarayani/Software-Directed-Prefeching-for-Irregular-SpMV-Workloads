@@ -21,6 +21,7 @@
 
 cd $SLURM_SUBMIT_DIR
 
+module load nvidia/cuda/13.0.0
 # Compile
 nvcc -O3 gpu_spmv_stage2_warpshfl.cu -o spmv_stage2
 
