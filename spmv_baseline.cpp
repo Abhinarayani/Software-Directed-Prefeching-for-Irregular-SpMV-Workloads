@@ -32,7 +32,8 @@ int main() {
   CSRMatrix A;
   A.num_rows = 3;
   A.num_cols = 3;
-  A.values = {5.0, 8.0, 3.0, 6.0};  // Non-zeros
+  // A.values = {5.0, 8.0, 3.0, 6.0};  // Non-zeros
+  A.values = {4.0, 7.0, 2.0, 5.0};  // Non-zeros
   A.column_indices = {0, 1, 0, 2};  // Columns
   A.row_pointers = {0, 1, 2, 4};    // Row start indices
 

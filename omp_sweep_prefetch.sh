@@ -47,7 +47,9 @@ likwid-perfctr -C 0-7 -g L2CACHE ./spmv_baseline
 echo "\n--------------------------------------------------"
 
 # 3. SWEEP THROUGH PREFETCH DISTANCES (k = 1, 4, 8, 16, 32, 64)
+# 3. SWEEP THROUGH PREFETCH DISTANCES (k = 1, 4, 8, 16, 32, 64, 128)
 for k in 1 4 8 16 32 64
+# for k in 1 4 8 16 32 64 128
 do
     echo "Profiling Prefetch with k=$k:"
     # -m provides machine-readable output tables in your .out file
