@@ -8,10 +8,10 @@
 #SBATCH -t 0-00:10:00
 
 # Job Name
-#SBATCH --job-name=stage1
+#SBATCH --job-name=stage2
 
 # Output and error files
-#SBATCH -o stage1-%j.out -e stage1-%j.err
+#SBATCH -o stage2-%j.out -e stage2-%j.err
 
 # Allocate CPU
 #SBATCH -c 1
