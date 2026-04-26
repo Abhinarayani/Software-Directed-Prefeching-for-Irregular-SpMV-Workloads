@@ -22,8 +22,9 @@
 cd $SLURM_SUBMIT_DIR
 
 # Compile
-nvcc -O3 spmv_stage1.cu -o spmv_stage1
+nvcc -O3 gpu_spmv_stage1_naive.cu -o spmv_stage1
 
 # Profile with Nsight Compute to see stalls
 # We are looking for "Long Scoreboard Stalls" (Waiting for Memory)
-ncu --metrics sm__sass_thread_inst_executed_op_memory_stall_long_scoreboard.sum ./spmv_stage1
+# ncu --metrics sm__sass_thread_inst_executed_op_memory_stall_long_scoreboard.sum ./spmv_stage1
+ncu --section MemoryWorkloadAnalysis ./spmv_stage1
