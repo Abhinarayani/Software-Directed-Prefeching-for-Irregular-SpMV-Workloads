@@ -1,0 +1,24 @@
+==PROF== Connected to process 525352 (/srv/home/veluradhakri/project/spmv_stage3)
+==PROF== Profiling "spmv_tiled_kernel" - 0: 0%....50%....100% - 7 passes
+Stage 3 (Tiled Shared Memory) Time: 1139.43 ms
+==PROF== Disconnected from process 525352
+[525352] spmv_stage3@127.0.0.1
+  spmv_tiled_kernel(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        22.29
+    Mem Busy                                         %        77.59
+    Max Bandwidth                                    %        83.22
+    L1/TEX Hit Rate                                  %        87.39
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        88.32
+    Mem Pipes Busy                                   %        83.22
+    -------------------------------------- ----------- ------------
+

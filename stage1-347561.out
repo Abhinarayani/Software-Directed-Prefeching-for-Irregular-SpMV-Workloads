@@ -1,0 +1,24 @@
+==PROF== Connected to process 2457959 (/srv/home/veluradhakri/project/spmv_stage1)
+==PROF== Profiling "spmv_naive_kernel" - 0: 0%....50%....100% - 7 passes
+Stage 1 (Naive) Time: 573.661 ms
+==PROF== Disconnected from process 2457959
+[2457959] spmv_stage1@127.0.0.1
+  spmv_naive_kernel(int, const int *, const int *, const double *, const double *, double *) (40, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        89.13
+    Mem Busy                                         %        34.33
+    Max Bandwidth                                    %        32.83
+    L1/TEX Hit Rate                                  %        78.03
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        42.41
+    Mem Pipes Busy                                   %         5.76
+    -------------------------------------- ----------- ------------
+
