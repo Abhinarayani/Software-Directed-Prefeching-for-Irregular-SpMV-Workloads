@@ -1,0 +1,173 @@
+==PROF== Connected to process 2461510 (/srv/home/veluradhakri/project/spmv_stage4)
+-----------------------------------
+SpMV K-Factor (Tile Size) Autotune
+-----------------------------------
+K (Tile)   | Execution Time
+-----------------------------------
+==PROF== Profiling "spmv_hybrid_async_kernel" - 0: 0%....50%....100% - 7 passes
+==PROF== Profiling "spmv_hybrid_async_kernel" - 1: 0%....50%....100% - 7 passes
+256        | 127.084    ms
+==PROF== Profiling "spmv_hybrid_async_kernel" - 2: 0%....50%....100% - 7 passes
+==PROF== Profiling "spmv_hybrid_async_kernel" - 3: 0%....50%....100% - 7 passes
+512        | 122.78     ms
+==PROF== Profiling "spmv_hybrid_async_kernel" - 4: 0%....50%....100% - 7 passes
+==PROF== Profiling "spmv_hybrid_async_kernel" - 5: 0%....50%....100% - 7 passes
+1024       | 122.827    ms
+==PROF== Profiling "spmv_hybrid_async_kernel" - 6: 0%....50%....100% - 7 passes
+==PROF== Profiling "spmv_hybrid_async_kernel" - 7: 0%....50%....100% - 7 passes
+2048       | 126.904    ms
+-----------------------------------
+==PROF== Disconnected from process 2461510
+[2461510] spmv_stage4@127.0.0.1
+  void spmv_hybrid_async_kernel<256>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        25.30
+    Mem Busy                                         %        52.27
+    Max Bandwidth                                    %        65.15
+    L1/TEX Hit Rate                                  %        91.35
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        88.73
+    Mem Pipes Busy                                   %        65.15
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<256>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        25.34
+    Mem Busy                                         %        51.60
+    Max Bandwidth                                    %        64.31
+    L1/TEX Hit Rate                                  %        91.18
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        87.27
+    Mem Pipes Busy                                   %        64.31
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<512>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        35.67
+    Mem Busy                                         %        65.05
+    Max Bandwidth                                    %        74.34
+    L1/TEX Hit Rate                                  %        89.82
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        86.80
+    Mem Pipes Busy                                   %        74.34
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<512>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        35.92
+    Mem Busy                                         %        65.07
+    Max Bandwidth                                    %        74.36
+    L1/TEX Hit Rate                                  %        89.86
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        86.36
+    Mem Pipes Busy                                   %        74.36
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<1024>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        41.59
+    Mem Busy                                         %        72.12
+    Max Bandwidth                                    %        75.21
+    L1/TEX Hit Rate                                  %        84.71
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        91.14
+    Mem Pipes Busy                                   %        75.21
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<1024>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        41.61
+    Mem Busy                                         %        72.30
+    Max Bandwidth                                    %        75.39
+    L1/TEX Hit Rate                                  %        84.64
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        91.22
+    Mem Pipes Busy                                   %        75.39
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<2048>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        36.93
+    Mem Busy                                         %        59.00
+    Max Bandwidth                                    %        60.94
+    L1/TEX Hit Rate                                  %        92.50
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        81.53
+    Mem Pipes Busy                                   %        60.94
+    -------------------------------------- ----------- ------------
+
+  void spmv_hybrid_async_kernel<2048>(int, const int *, const int *, const double *, const double *, double *) (1250, 1, 1)x(256, 1, 1), Context 1, Stream 7, Device 0, CC 8.9
+    Section: Memory Workload Analysis
+    -------------------------------------- ----------- ------------
+    Metric Name                            Metric Unit Metric Value
+    -------------------------------------- ----------- ------------
+    Local Memory Spilling Requests                          no data
+    Local Memory Spilling Request Overhead           %      no data
+    Memory Throughput                          Gbyte/s        36.86
+    Mem Busy                                         %        59.18
+    Max Bandwidth                                    %        61.10
+    L1/TEX Hit Rate                                  %        92.53
+    L2 Persisting Size                           Mbyte         7.86
+    L2 Compression Success Rate                      %            0
+    L2 Compression Ratio                                          0
+    L2 Compression Input Sectors                sector            0
+    L2 Hit Rate                                      %        81.82
+    Mem Pipes Busy                                   %        61.10
+    -------------------------------------- ----------- ------------
+
